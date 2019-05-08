@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .col-md-3{
+  display: inline-block;
+  margin-left:-4px;
+}
+.col-md-3 img{
+  width:500;
+  height:500;
+  align:'middle';
+}
+
+body .carousel-control-prev-icon{
+  background-color:red;
+  margin-left: -200px;
+}
+body .carousel-control-next-icon{
+  background-color:red;
+  margin-right: -200px;
+}
+body .no-padding{
+  padding-left: 20;
+  padding-right: 20;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+</head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<div>
+  
+<p><img src="WordArt.jpeg" alt="Pineapple" width=100 height=100 style="float: right;margin-left:15px;">
+<h2>GIRI PRASATH V</h2>
+<p>datatrucktech@gmail.com <br> Mob: +91 - 9787707894</p>
+    </p>
+  </div>
+<hr>
+
+<h3>DATA SCIENCE PROJECTS PORTFOLIO</h3>
+<p>A Display of the Machine Learning Models developed as part of my Data Scientist Journey.<br>Click on the Title of the project to view the complete code, analysis, model and findings.</p>
+  
+
+<!-- Portfolio Gallery Grid -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+ 
+  <!-- The slideshow -->
+  <div class="container carousel-inner no-padding">
+    <div class="carousel-item active" style="text-align: center">
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="similarproduct.jpg" alt="Cart" height="100" width="100" align="middle">
+      <h3 align="center"><a href="SimilarProductsSearchEngine.html">Similar Products Search Engine</a></h3>
+        <p align="justify">NLP Use Case solved with BOW Vector, Tf-Idf and Cosine Similarity. ML Based Search engine that fetches Similar products from the 180K product inventory data scraped from Amazon.</p>
+      </div>    
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="lstm.png" alt="lstm" height="100" width="100" align="middle">
+      <h3 align="center"><a href="LSTM_Network_SequencePrediction.html">LSTM for Sequence Prediction</a></h3>
+      <p align="justify">An LSTM RNN network developed using teh Keras Framework to predict the next number in the series when input sequence of 5 numbers are given.</p>
+      </div>  
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="click.PNG" alt="Click" height="100" width="100" align="middle">
+      <h3 align="center"><a href="ClickPredictor.html">Digital Ad Click Predictor</a></h3>
+      <p align="justify">A Click Predictor Model built on 4 different Classification algorithms and the accuracies compared. The click predictor is an important ML Feature for Digital Ad Exchanges to spend the budget wisely.</p>
+      </div>   
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="kypho.jpg" alt="Cart" height="100" width="100" align="middle">
+      <h3 align="center"><a href="KyphosisRecurrencePredictor.html">Kyphosis Predictor</a></h3>
+      <p align="justify">NLP Use Case solved with BOW Vector, Tf-Idf and Cosine Similarity. ML Based Search engine that fetches Similar products from the 180K product inventory data scraped from Amazon.</p>
+      </div>   
+    </div>
+    
+	  <div class="carousel-item" style="text-align: center">
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="fleet.PNG" alt="Fleet" height="100" width="100" align="middle">
+      <h3 align="center"><a href="FleetManagement.html">Clustering Of Drivers Data</a></h3>
+        <p align="justify">A K Means Clustering Model developed to cluster the Drivers' data into segments based on input features. Elbow Method implemented to decided optimum segments number.</p>
+      </div>    
+       <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="titanic.png" alt="titanic" height="100" width="100" align="middle">
+      <h3 align="center"><a href="Titanic_survivor.html">Titanic Survivor Predictor</a></h3>
+      <p align="justify">A Predictor Model developed to point the prediction probability of a traveller on the Titanic Ship. Data Cleaning of Null Values implemented using an identified Pattern.</p>
+      </div>  
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="spam.PNG" alt="spam" height="100" width="100" align="middle">
+      <h3 align="center"><a href="Spam_Detector.html">Spam SMS Detector</a></h3>
+      <p align="justify">A Natural Language Processing Use Case where Naive Bayes CLassifier Model is used to classify the Spam SMS from teh Real ones. Tf-Idf Word Embedding is implemented.</p>
+      </div>   
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="house.PNG" alt="house" height="100" width="100" align="middle">
+      <h3 align="center"><a href="LinearRegression.html">House Price Estimator</a></h3>
+      <p align="justify">A Supervised Regression Model that calculates the price of Housing units based on Real Estate Data including many input features and the price of the sample housing units.</p>
+      </div> 
+    </div>
+    
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+	
+<div class="content">
+  <h3>DATA SCIENCE SKILL SET</h3>
+  <p><b>Programming languages : </b>Python, R <br> <b>Libraries : </b>Python - Sklearn, seaborn, numpy, pandas. R - ggplot2, caTools </p>
+  <p><b>Algorithms & Statistics : </b>K Means Clustering, KNN, Decision Trees, Random Forests, Linear Regression, Logistic Regression, Naive Bayes, Cosine similarity, Pairwise Distances, CountVector(BOW), Tf-Idf  </p>
+  <p><b>Data Science Solutions developed for :</b> Clustering, Classification, Forecastig, Text Classification, Text Similarity Score, Image Similarity, Chat Bot, Voice To Text Bot Assistant, OCR, Social Media Analytics kind of problem statements </p>
+  <p><b>Data Engineering : Scripts for data pipelines using python, integrating the components including - SQL, Athena, Postgres, Hive, AIRFLOW Scheduler </p>
+  <p><b>Visualization tools : Tableau, Metabase, Python Dash, Python Plotly, R Shiny 	  
+  </div>
+<div>
+
+<!-- END MAIN -->
+</div>
+	
+	
+</body>
+</html>
